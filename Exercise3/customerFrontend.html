@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Store</title>
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+
+  <body>
+    <h1>Welcome to the hat store!</h1>
+    <form class="store" onSubmit ="return Validate(this)" action="customerBackend.php">
+      <table id="items">
+        <tr>
+          <td>
+            <div class="item">
+              <h2>White Hat</h2>
+              <p>$20</p>
+              <br>Quantity<input type="text" name="wHat" value="0">
+            </div>
+          </td>
+          <td>
+            <div class="item">
+              <h2>Black Hat</h2>
+              <p>$40</p>
+              <br>Quantity<input type="text" name="bHat" value="0">
+            </div>
+          </td>
+          <td>
+            <div class="item">
+              <h2>Gray Hat</h2>
+              <p>$35</p>
+              <br>Quantity<input type="text" name="gHat" value="0">
+            </div>
+          </td>
+        </tr>
+      </table><br>
+      <div class="user">
+      Username:<input id = "uName" type="text" name="username"><br>
+      Password:<input id="p1" type="password" name="password" ><br>
+      </div>
+      <div class="shipping">
+        Select your shipping method:<br>
+        <input type="radio" name="sMethod" value="0" checked="checked">
+        Free 7 day<br>
+        <input type="radio" name="sMethod" value="50">
+        $50.00 over night<br>
+        <input type="radio" name="sMethod" value="5">
+        $5.00 three day<br>
+      </div>
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>
